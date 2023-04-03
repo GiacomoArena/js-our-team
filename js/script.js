@@ -39,7 +39,7 @@ for(let member of team){
   console.log(member);
 //creo una col che verrá posizionata dentro la row  e si ripeterá per ogni oggetto presente nella lista tea
   teamInfo.innerHTML += `
-  <div class="col-4"> 
+  <div class="col-4 "> 
   <img src="img/${member.image}">
   <h4> ${member.name} </h4>
   <p> ${member.role} </p>
