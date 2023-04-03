@@ -1,3 +1,7 @@
+const trName = document.getElementById('teamName');
+const teamRole = document.getElementById('teamRole');
+const teamImg = document.getElementById('teamImg');
+
 
 const team = [
   {
@@ -31,3 +35,11 @@ const team = [
     image:"barbara-ramos-graphic-designer.jpg"
   }
 ];
+
+
+for(let member of team){
+  console.log(member);
+  trName.innerHTML += `
+  <td> ${member.name} </td>
+  `
+}
