@@ -1,6 +1,4 @@
-const trName = document.getElementById('teamName');
-const teamRole = document.getElementById('teamRole');
-const teamImg = document.getElementById('teamImg');
+const teamInfo = document.querySelector('.row')
 
 
 const team = [
@@ -39,13 +37,13 @@ const team = [
 
 for(let member of team){
   console.log(member);
-  trName.innerHTML += `
+
+  teamInfo.innerHTML += `
+  <div class="col"> 
+  <img src="img/${member.image}">
   <p> ${member.name} </p>
-  `
-  teamRole.innerHTML += `
   <p> ${member.role} </p>
-  `
-  teamImg.innerHTML += `
-  <p> ${member.image} </p>
-  `
+  </div>
+
+  `;
 }
