@@ -39,7 +39,7 @@ for(let member of team){
   console.log(member);
 
   teamInfo.innerHTML += `
-  <div class="col"> 
+  <div class="col-4"> 
   <img src="img/${member.image}">
   <p> ${member.name} </p>
   <p> ${member.role} </p>
