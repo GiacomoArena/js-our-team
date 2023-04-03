@@ -40,6 +40,12 @@ const team = [
 for(let member of team){
   console.log(member);
   trName.innerHTML += `
-  <td> ${member.name} </td>
+  <p> ${member.name} </p>
+  `
+  teamRole.innerHTML += `
+  <p> ${member.role} </p>
+  `
+  teamImg.innerHTML += `
+  <p> ${member.image} </p>
   `
 }

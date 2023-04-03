@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 .container{
-  width: 80%;
-  margin: 50px auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-table,{
-  border: 1px solid black;
+.col{
+  margin: 15px;
 }
-#teamName{
+#teamName, 
+#teamRole,
+#teamImg{
   display: flex;
   flex-direction: column;
 }
